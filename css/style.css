@@ -1,0 +1,133 @@
+@import './global/reset.css';
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-title {
+  font-size: 3vw;
+  color: #77ffc0;
+}
+
+.left-login-img {
+  width: 35vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.875rem 2.1875rem;
+  background: #2f2841;
+  border-radius: 1.25rem;
+  box-shadow: 0 .625rem 2.5rem rgba(0, 0, 0, 0.337);
+}
+
+.card-title {
+  color: #00ff88;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: .625rem 0;
+}
+
+.textfield input {
+  width: 100%;
+  border-radius: .625rem;
+  padding: .9375rem;
+  color: #f0ffff94;
+  background: #514869;
+  font-size: .75rem;
+  box-shadow: 0 .625rem 2.5rem rgba(0, 0, 0, 0.337);
+}
+
+.textfield input::placeholder {
+  color: #f0ffff94;
+}
+
+.textfield label {
+  color: #f0ffffde;
+  margin-bottom: .625rem;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1.5625rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .125rem;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0 .625rem 2.5rem -.75rem #00ff8052;
+}
+
+.btn-login:hover {
+  color: #3d1c6a;
+  background: #00e178;
+  box-shadow: 0 .625rem 2.5rem -.75rem #00ff8064;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .login-title {
+    display: none;
+  }
+
+  .left-login,
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-login-img {
+    margin-bottom: 1.25rem;
+    width: 50vw;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}
